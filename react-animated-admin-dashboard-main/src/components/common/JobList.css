@@ -1,0 +1,33 @@
+/* src/JobList.css */
+
+.job-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .job-list h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .job-item {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .job-item h3 {
+    margin: 0;
+  }
+  
+  .job-item p {
+    margin: 5px 0;
+  }
+  
+  .job-item strong {
+    font-weight: bold;
+  }
+  

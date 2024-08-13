@@ -1,0 +1,25 @@
+/* Custom styles for toast notifications */
+.Toastify__toast {
+    border-radius: 5px !important;
+  }
+  
+  .Toastify__toast--success {
+    background: #4caf50 !important;
+    color: white !important;
+  }
+  
+  .Toastify__toast--error {
+    background: #f44336 !important;
+    color: white !important;
+  }
+  
+  .Toastify__toast--warning {
+    background: #ff9800 !important;
+    color: white !important;
+  }
+  
+  .Toastify__toast--info {
+    background: #2196f3 !important;
+    color: white !important;
+  }
+  

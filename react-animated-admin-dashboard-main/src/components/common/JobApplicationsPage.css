@@ -1,0 +1,37 @@
+/* JobApplicationsPage.css */
+.applications-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.applications-page h1 {
+    margin-bottom: 20px;
+}
+
+.applications-page .error {
+    color: red;
+}
+
+.applications-page table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.applications-page th, .applications-page td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.applications-page th {
+    background-color: #f4f4f4;
+    text-align: left;
+}
+
+.applications-page a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.applications-page a:hover {
+    text-decoration: underline;
+}
