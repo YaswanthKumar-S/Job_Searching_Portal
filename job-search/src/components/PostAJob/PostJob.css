@@ -1,0 +1,109 @@
+.post-job-page {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-job-page h1 {
+    margin-top: 0;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .post-job-page form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .post-job-page label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .post-job-page input, .post-job-page textarea, .post-job-page select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .post-job-page input[type="file"] {
+    padding: 10px 0;
+  }
+  
+  .post-job-page textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  .post-job-page select {
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .post-job-page button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .post-job-page button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  .post-job-page .error {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .post-job-page .success {
+    color: green;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+  /* Job Details Section */
+  .post-job-page .job-details {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .post-job-page .job-details h2 {
+    margin-top: 0;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .post-job-page .job-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .post-job-page .job-details li {
+    margin-bottom: 10px;
+  }
+  
+  .post-job-page .job-details li label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .post-job-page .job-details li span {
+    font-size: 14px;
+    color: #666;
+  }

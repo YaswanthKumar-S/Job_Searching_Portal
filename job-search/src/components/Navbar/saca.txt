@@ -1,0 +1,60 @@
+import React, { useEffect, useState } from 'react';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
+import './NavigationBar.css';
+
+const NavigationBar = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (token) {
+      setIsLoggedIn(true);
+    }
+  }, []);
+
+  const handleLoginClick = () => {
+    navigate('/login');
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    setIsLoggedIn(false);
+  };
+
+  const checkLoginStatus = () => {
+    const token = localStorage.getItem('token');
+    if (token) {
+      setIsLoggedIn(true);
+    } else {
+      setIsLoggedIn(false);
+    }
+  };
+
+  return (
+    <Navbar bg="light" expand="lg" className="custom-navbar">
+      <Navbar.Brand href="/">
+        {/* <img src="logo.png" alt="Brand Logo" style={{ width: 100, height: 50 }} /> */}
+        <h1>GetMeHired</h1>
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="mr-auto custom-nav">
+          <Nav.Link href="#about" className="custom-nav-link">About</Nav.Link>
+          <Nav.Link href="#contact" className="custom-nav-link">Contact</Nav.Link>
+          {isLoggedIn ? (
+            <Nav.Link onClick={handleLogout} className="custom-nav-link">Logout</Nav.Link>
+          ): (
+            <NavDropdown title="Login" id="basic-nav-dropdown" onClick={handleLoginClick} className="custom-nav-dropdown">
+              <NavDropdown.Item href="/login" className="custom-nav-dropdown-item" onClick={() => checkLoginStatus()}>Candidate Login</NavDropdown.Item>
+              <NavDropdown.Item href="#employer-login" className="custom-nav-dropdown-item">Employer Login</NavDropdown.Item>
+            </NavDropdown>
+          )}
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+  );
+};
+
+export default NavigationBar;

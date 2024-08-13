@@ -1,0 +1,88 @@
+
+
+.login-signup-form {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #746b6b2a;
+    border-radius: 10px;
+    box-shadow: 0 0px 15px rgba(114, 255, 20, 0.279);
+  }
+  
+  .login-signup-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .login-signup-form form {
+    margin-top: 10px;
+  }
+  
+  .login-signup-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .login-signup-form input[type="text"],
+  .login-signup-form input[type="email"],
+  .login-signup-form input[type="password"] {
+    width: 95%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 0px;
+    border: 1px solid #3e8e41;
+    border-radius: 5px;
+    padding-left: 10px;
+  }
+  
+  .login-signup-form input[type="text"]:focus,
+  .login-signup-form input[type="email"]:focus,
+  .login-signup-form input[type="password"]:focus {
+    box-shadow: 0 0 10px rgba(136, 254, 39, 0.753);
+    border-color: #19e112;
+    padding-left: 10px; /* add 10px padding to the left */
+  }
+  
+  /* Add hover effect to submit button */
+  .login-signup-form button[type="submit"]:hover {
+    background-color: #3e8e41;
+    cursor: pointer;
+  }
+  
+  /* Add click effect to submit button */
+  .login-signup-form button[type="submit"]:active {
+    background-color: #2e6c31;
+    transform: translateY(2px);
+  }
+  
+  /* Add transition effect to submit button */
+  .login-signup-form button[type="submit"] {
+    transition: background-color 0.2s ease-out, transform 0.2s ease-out;
+  }
+  
+  .login-signup-form button[type="submit"] {
+    width: 98%;
+    height: 40px;
+    background-color: #d62bf0;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+  
+  .login-signup-form button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  .login-signup-form p {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .login-signup-form span {
+    cursor: pointer;
+    color: #4caf50;
+  }
+  

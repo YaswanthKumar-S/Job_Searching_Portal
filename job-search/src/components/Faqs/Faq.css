@@ -1,0 +1,31 @@
+.faq {
+    padding: 20px 40px;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    text-align: left;
+  }
+  
+  .faq h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+  }
+  
+  .faq-item {
+    margin-bottom: 15px;
+    background-color:rgba(74, 67, 67, 0.68);
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .faq-item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #000000;
+  }
+  
+  .faq-item p {
+    margin: 5px 0 0 0;
+    font-size: 1rem;
+    color: #000000;
+  }
